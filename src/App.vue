@@ -1,18 +1,30 @@
 <template>
-  <h1>Hello world</h1>
+  <div>
+    <Header></Header>
+    <Menu></Menu>
+  </div>
 </template>
 
 <script>
+import Header from './components/Header'
+import Menu from './components/Menu'
 
+export default{
+  components: {
+    Header,
+    Menu,
+  }
+}
 </script>
 
 <style>
+*{
+  font-family: 'Roboto', Helvetica !important;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
